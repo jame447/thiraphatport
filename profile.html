@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="" href="cssport.css">
+    <style>
+        /*font*/
+        @font-face {
+            font-family: beyonders;
+            src: url(/font/Beyonders.ttf);
+        }
+
+        @font-face {
+            font-family: HFWhale;
+            src: url(/font/HFWhale.ttf);
+        }
+
+        @font-face {
+            font-family: Mahuema;
+            src: url(/font/MN\ Mahuema.ttf);
+        }
+
+        body {
+            margin: 0px;
+            z-index: 0;
+        }
+
+
+
+        /*boxด้านนอกสุด*/
+        .container {
+            background-color: rgb(113, 111, 111);
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+        }
+
+        .topbar {
+            /*navbarด้านบน*/
+            display: flex;
+            background-color: rgb(79, 79, 79);
+            width: 100%;
+            height: 60px;
+            z-index: 99999;
+
+        }
+
+        .intopbar {
+            /*ด้านในnavbar*/
+            display: flex;
+            border-bottom: 2px solid rgb(27, 26, 26);
+            background-color: rgb(54, 51, 51);
+            width: 100%;
+            gap: 200px;
+            position: fixed;
+
+            top: 5;
+            align-items: center;
+
+        }
+
+        .portfolio {
+            /*Logo*/
+            font-family: beyonders;
+            position: relative;
+            font-size: 30px;
+            color: white;
+            left: 10px;
+
+
+        }
+
+
+
+        /*ปุ่มsite1*/
+        .goto {
+            /*ปุ่มเปลี่ยนsite*/
+            position: relative;
+            display: flex;
+            left: 80px;
+            gap: 4px;
+
+        }
+
+        .goto1 {
+            /*ปุ่มsite1*/
+            background-color: black;
+            border-right: 2px solid rgb(186, 183, 183);
+            text-align: center;
+            color: white;
+            width: 70px;
+            font-family: HFWhale;
+        }
+        .a :hover{
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(132, 132, 132);
+        }
+
+        .goto2 {
+            /*ปุ่มsite2*/
+            background-color: rgb(70, 70, 70);
+            border-right: 2px solid rgb(186, 183, 183);
+            text-align: center;
+            color: white;
+            width: 70px;
+            font-family: HFWhale;
+        }
+        .b :hover{
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(132, 132, 132);
+        }
+
+        .goto3 {
+            /*ปุ่มsite3*/
+            background-color: black;
+            border-right: 2px solid rgb(186, 183, 183);
+            color: white;
+            text-align: center;
+            color: white;
+            width: 75px;
+            font-family: HFWhale;
+        }
+        .c :hover{
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(132, 132, 132);
+        }
+
+        .goto4 {
+            /*ปุ่มsite4*/
+            background-color: turquoise;
+            border-right: 2px solid white;
+            color: white;
+            text-align: center;
+            color: white;
+            width: 90px;
+            font-family: HFWhale;
+        }
+        .d :hover {
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(162, 254, 245);
+        }
+
+
+
+        /*boxข้อมูลด้านใน*/
+        .imageprofile {
+            position: relative;
+            top: 50px;
+            border-top: 7px solid black;
+            border-bottom-right-radius: 20%;
+            border-top-right-radius: 40%;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+
+        }
+
+        .myprofile {
+            position: relative;
+            top: 10px;
+            height: 85px;
+            border-top: 5px solid black;
+            border-bottom-right-radius: 20%;
+            border-top-right-radius: 40%;
+            width: 150px;
+            color: black;
+            background-color: rgb(172, 172, 172);
+            font-family: HFWhale;
+            text-align: center;
+        }
+
+        .boxinfor {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            gap: 35px;
+            position: relative;
+            width: 510px;
+            height: 395px;
+            bottom: 290px;
+            left: 340px;
+            color: rgb(176, 176, 176);
+            font-family: Mahuema;
+            border-right:5px solid rgb(186, 183, 183) ;
+
+        }
+
+        .name {
+            display: grid;
+            grid-template-columns: 155px 230px auto;
+            border-bottom: 5px solid rgb(186, 183, 183);
+
+        }
+
+        .bd {
+            display: grid;
+            grid-template-columns: 340px auto;
+            border-bottom: 5px solid rgb(186, 183, 183);
+
+        }
+
+        .rnr {
+            display: grid;
+            grid-template-columns: 160px 160px auto;
+            border-bottom: 5px solid rgb(186, 183, 183);
+
+        }
+
+        .ddress {
+            grid-template-columns: auto;
+            border-bottom: 5px solid rgb(186, 183, 183);
+
+        }
+
+        .property {
+            grid-template-columns: auto;
+
+        }
+        .skill{
+            position: relative;
+            width: 70px;
+            height: 56px;
+            bottom: 775px;
+            border-radius: 20%;
+            left: 890px;
+            background-color: rgb(172, 172, 172);
+            font-family: HFWhale;
+            text-align: center;
+
+
+        }
+        .boxskill {
+            display: grid;
+            position: relative;
+            gap: 10px;
+            bottom: 730px;
+            left: 980px;
+            width: 50px;
+            
+
+        }
+        .namee :hover {
+            background-color: black ;
+            color: white;
+        }
+        .lastname :hover {
+            background-color: black ;
+            color: white;
+        }
+        .nickname :hover {
+            background-color: black ;
+            color: white;
+        }
+        .bday :hover {
+            background-color: black ;
+            color: white;
+        }
+        .blood :hover {
+            background-color: black ;
+            color: white;
+        }
+        .race :hover {
+            background-color: black ;
+            color: white;
+        }
+        .nationality :hover {
+            background-color: black ;
+            color: white;
+        }
+        .religion :hover {
+            background-color: black ;
+            color: white;
+        }
+        .address :hover {
+            background-color: black ;
+            color: white;
+        }
+        .property :hover {
+            background-color: black ;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="intopbar">
+                <div class="portfolio"><img src="/img/hand.png" alt="cat" width="40" height="40"> Protfolio</div>
+                <div class="goto">
+                    <a href="./index.html" style="text-decoration: none;" class="a">
+                        <div class="goto1">Home</div>
+                    </a>
+                    <a href="./profile.html" style="text-decoration: none;" class="b">
+                        <div class="goto2">Profile</div>
+                    </a>
+                    <a href="./certificate.html" style="text-decoration: none;" class="c">
+                        <div class="goto3">Certificate</div>
+                    </a>
+                    <a href="./cenextgent.html" style="text-decoration: none;" class="d">
+                        <div class="goto4">CE NEXT GEN</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="myprofile">
+            <h1>My profile</h1>
+        </div>
+        <div class="imageprofile">
+            <img src="./img/profile.PNG" alt="profile" width="300" height="300">
+        </div>
+        <div class="boxinfor">
+            <div class="name">
+                <div class="namee">ชื่อ : <u>ธีรภัทร</u></div>
+                <div class="lastname">นามสกุล : <u>ทองสิงห์</u></div>
+                <div class="nickname">ชื่อเล่น : <u>เจม</u></div>
+            </div>
+            <div class="bd">
+                <div class="bday">วัน/เดือน/ปีเกิด : <u>1/พ.ย/2548</u></div>
+                <div class="blood">หมู่เลือด : <u>B</u></div>
+            </div>
+            <div class="rnr">
+                <div class="race">เชื้อชาติ : <u>ไทย</u></div>
+                <div class="nationality">สัญชาติ : <u>ไทย</u></div>
+                <div class="religion">ศาสนา : <u>พุทธ</u></div>
+            </div>
+            <div class="address">ที่อยู่ : <u>192/8 ต.รังสิต อ.ธัญบุรี จ.ปทุมธานี 12110</u></div>
+            <div class="property">ลักษณะนิสัย : <u>ไม่ค่อยเข้าสังคมไม่ค่อยพูดแต่ถ้าสนิทกับคนไหนมากๆจะพูดไม่หยุด</u>
+            </div>
+        </div>
+        <div class="skill"><h1>Skill</h1></div>
+        <div class="boxskill">
+            <div class="icon_html"><img src="./img/html-5.png" alt="html" width="110" ></div>
+            <div class="icon_css"><img src="./img/css-3.png" alt="css" width="110"></div>
+            <div class="icon_js"><img src="./img/js.png" alt="js" width="110"></div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

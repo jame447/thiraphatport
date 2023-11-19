@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="" href="cssport.css">
+    <style>
+        /*font*/
+        @font-face {
+            font-family: beyonders;
+            src: url(/font/Beyonders.ttf);
+        }
+
+        @font-face {
+            font-family: HFWhale;
+            src: url(/font/HFWhale.ttf);
+        }
+
+        body {
+            margin: 0px;
+            z-index: 0;
+        }
+
+
+
+        /*boxด้านนอกสุด*/
+        .container {
+            background-color: rgb(113, 111, 111);
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .topbar {
+            /*navbarด้านบน*/
+            display: flex;
+            background-color: rgb(79, 79, 79);
+            width: 100%;
+            height: 60px;
+
+
+        }
+
+        .intopbar {
+            /*ด้านในnavbar*/
+            display: flex;
+            border-bottom: 2px solid rgb(27, 26, 26);
+            background-color: rgb(54, 51, 51);
+            width: 100%;
+            gap: 200px;
+            position: fixed;
+
+            top: 5;
+            align-items: center;
+
+        }
+
+        .portfolio {
+            /*Logo*/
+            font-family: beyonders;
+            position: relative;
+            font-size: 30px;
+            color: white;
+            left: 10px;
+
+
+        }
+
+
+
+        /*ปุ่มsite1*/
+        .goto {
+            /*ปุ่มเปลี่ยนsite*/
+            position: relative;
+            display: flex;
+            left: 80px;
+            gap: 4px;
+
+        }
+
+        .goto :hover {
+            border-top: 4px;
+        }
+
+        .goto1 {
+            /*ปุ่มsite1*/
+            background-color: rgb(70, 70, 70);
+            border-right: 2px solid rgb(186, 183, 183);
+            text-align: center;
+            color: white;
+            width: 70px;
+            font-family: HFWhale;
+
+        }
+
+        .a :hover {
+            border-top: 2px solid rgb(186, 183, 183);
+            background-color: rgb(132, 132, 132);
+
+        }
+
+        .goto2 {
+            /*ปุ่มsite2*/
+            background-color: black;
+            border-right: 2px solid rgb(186, 183, 183);
+            text-align: center;
+            color: white;
+            width: 70px;
+            font-family: HFWhale;
+        }
+
+        .b :hover {
+            border-top: 2px solid rgb(186, 183, 183);
+            background-color: rgb(132, 132, 132);
+
+        }
+
+        .goto3 {
+            /*ปุ่มsite3*/
+            background-color: black;
+            border-right: 2px solid rgb(186, 183, 183);
+            color: white;
+            text-align: center;
+            width: 75px;
+            font-family: HFWhale;
+        }
+
+        .c :hover {
+            border-top: 2px solid rgb(186, 183, 183);
+            background-color: rgb(132, 132, 132);
+
+        }
+
+        .goto4 {
+            /*ปุ่มsite4*/
+            background-color: turquoise;
+            border-right: 2px solid white;
+            color: white;
+            text-align: center;
+            width: 90px;
+            font-family: HFWhale;
+        }
+
+        .d :hover {
+            border-top: 2px solid rgb(186, 183, 183);
+            background-color: rgb(162, 254, 245);
+        }
+
+
+
+
+
+        /*boxข้อมูลด้านใน*/
+        .boxhello {
+            /*boxข้อมูลแนะนำตัว*/
+
+            position: relative;
+            display: flex;
+            width: 100%;
+            font-family: HFWhale;
+
+
+        }
+
+        .img_me {
+            /*รูปตัวเอง*/
+            position: relative;
+            left: 0px;
+            bottom: 150px;
+            width: 300px;
+            height: 450px;
+
+        }
+
+        .border {
+            /*รูปตัวเอง*/
+            top: 70px;
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgb(102, 102, 102);
+            border-radius: 50%;
+            overflow: hidden;
+            top: 30px;
+            position: relative;
+        }
+
+
+
+
+
+        .hello {
+            color: white;
+            position: relative;
+            top: 90px;
+            left: 250px;
+            height: 50px;
+            font-size: 20px;
+
+        }
+
+        .jame {
+            height: 30px;
+            position: relative;
+            top: 150px;
+            left: 100px;
+            font-size: 20px;
+
+        }
+
+        .thiraphat {
+            height: 50px;
+            position: relative;
+            top: 140px;
+            left: 100px;
+            color: turquoise;
+            font-size: 20px;
+
+        }
+
+        .contacticon {
+            border-left: 3px solid black;
+            height: 35px;
+            display: flex;
+            position: relative;
+            top: 497px;
+            gap: 10px;
+
+        }
+
+        .mycontact {
+            height: 5px;
+            position: relative;
+            top: 497px;
+        }
+
+        .fb {
+            height: auto;
+            width: auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .fb :hover {
+            background-color: white;
+        }
+
+        .ig {
+            height: auto;
+            width: auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .ig :hover {
+            background-color: white;
+        }
+        .git {
+            height: auto;
+            width: auto;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+        .git :hover {
+            background-color: white;
+
+        }
+        .hello
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="intopbar">
+                <div class="portfolio"><img src="/img/hand.png" alt="cat" width="40" height="40"> Protfolio</div>
+                <div class="goto">
+                    <a href="./index.html" style="text-decoration: none;" class="a">
+                        <div class="goto1">Home</div>
+                    </a>
+                    <a href="./profile.html" style="text-decoration: none;" class="b">
+                        <div class="goto2">Profile</div>
+                    </a>
+                    <a href="/certificate.html" style="text-decoration: none;" class="c">
+                        <div class="goto3">Certificate</div>
+                    </a>
+                    <a href="./cenextgent.html" style="text-decoration: none;" class="d">
+                        <div class="goto4">CE NEXT GEN</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="boxhello">
+            <div class="border">
+                <div class="img_me"><img src="./img/me.JPG" alt="me" width="500" height="760"> </div>
+            </div>
+            <div class="hello">
+                <p>
+                <h1>
+                    Hello,I'm
+                </h1>
+                </p>
+            </div>
+            <div class="jame">
+                <p>
+                <h2>
+                    N'Jame
+                </h2>
+                </p>
+            </div>
+            <div class="thiraphat">
+                <p>
+                <h4>
+                    Thiraphat Thongsing
+                </h4>
+                </p>
+            </div>
+            <div class="contacticon">
+                <a href="https://web.facebook.com/jame12346789" target="_blank" style="text-decoration: none;"
+                    class="fb">
+                    <div class="fb">
+                        <img src="./contact/facebook.png" alt="facebook" width="35" height="35">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/1.6mmyuoi/?fbclid=IwAR3_RjyCTrgiFppABb7b9JHJMtobHJBTqtqql2KIc7g8V2Mn_hOEDZk2hs0"
+                    target="_blank" style="text-decoration: none;" class="ig">
+                    <div class="ig">
+                        <img src="./contact/instagram.png" alt="instagram" width="35" height="35">
+                    </div>
+                </a>
+                <a href="https://github.com/jame447" target="_blank" style="text-decoration: none;" class="git">
+                    <div class="git">
+                        <img src="./contact/github.png" alt="github" width="35" height="35">
+
+                    </div>
+                </a>
+
+            </div>
+            <div class="mycontact">My contact</div>
+        </div>
+
+</body>
+
+</html>

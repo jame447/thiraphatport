@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>certificate</title>
+    <style>
+        /*font*/
+        @font-face {
+            font-family: beyonders;
+            src: url(/font/Beyonders.ttf);
+        }
+
+        @font-face {
+            font-family: HFWhale;
+            src: url(/font/HFWhale.ttf);
+        }
+
+        body {
+            margin: 0px;
+            z-index: 0;
+        }
+
+
+
+        /*boxด้านนอกสุด*/
+        .container {
+            background-color: rgb(113, 111, 111);
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+        }
+
+        .topbar {
+            /*navbarด้านบน*/
+            display: flex;
+            background-color: rgb(79, 79, 79);
+            width: 100%;
+            height: 60px;
+            z-index: 99999;
+
+        }
+
+        .intopbar {
+            /*ด้านในnavbar*/
+            display: flex;
+            border-bottom: 2px solid rgb(27, 26, 26);
+            background-color: rgb(54, 51, 51);
+            width: 100%;
+            gap: 200px;
+            position: fixed;
+
+            top: 5;
+            align-items: center;
+
+        }
+
+        .portfolio {
+            /*Logo*/
+            font-family: beyonders;
+            position: relative;
+            font-size: 30px;
+            color: white;
+            left: 10px;
+
+
+        }
+
+
+
+        /*ปุ่มsite1*/
+        .goto {
+            /*ปุ่มเปลี่ยนsite*/
+            position: relative;
+            display: flex;
+            left: 80px;
+            gap: 4px;
+
+        }
+
+        .goto1 {
+            /*ปุ่มsite1*/
+            background-color: black;
+            border-right: 2px solid rgb(186, 183, 183);
+            text-align: center;
+            color: white;
+            width: 70px;
+            font-family: HFWhale;
+        }
+        .a :hover{
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(132, 132, 132);
+        }
+
+        .goto2 {
+            /*ปุ่มsite2*/
+            background-color: black;
+            border-right: 2px solid rgb(186, 183, 183);
+            text-align: center;
+            color: white;
+            width: 70px;
+            font-family: HFWhale;
+        }
+        .b :hover{
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(132, 132, 132);
+        }
+
+        .goto3 {
+            /*ปุ่มsite3*/
+            background-color: rgb(70, 70, 70);
+            border-right: 2px solid rgb(186, 183, 183);
+            color: white;
+            text-align: center;
+            color: white;
+            width: 75px;
+            font-family: HFWhale;
+        }
+        .c :hover{
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(132, 132, 132);
+        }
+
+        .goto4 {
+            /*ปุ่มsite4*/
+            background-color: turquoise;
+            border-right: 2px solid white;
+            color: white;
+            text-align: center;
+            color: white;
+            width: 90px;
+            font-family: HFWhale;
+        }
+        .d :hover {
+            border-top:2px solid rgb(186, 183, 183) ;
+            background-color: rgb(162, 254, 245);
+        }
+
+        .Cer {
+            position: relative;
+            text-align: center;
+            bottom: 290px;
+            font-family: HFWhale;
+            color: white;
+            border-radius: 20%;
+            background-color: rgb(172, 172, 172);
+
+
+        }
+
+        .Certificate_img {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 150px;
+            text-align: center;
+            color: white;
+
+        }
+       
+
+
+        /*boxข้อมูลด้านใน*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="intopbar">
+                <div class="portfolio"><img src="./img/hand.png" alt="cat" width="40" height="40"> Protfolio</div>
+                <div class="goto">
+                    <a href="./index.html" style="text-decoration: none;" class="a">
+                        <div class="goto1">Home</div>
+                    </a>
+                    <a href="./profile.html" style="text-decoration: none;" class="b" >
+                        <div class="goto2">Profile</div>
+                    </a>
+                    <a href="./certificate.html" style="text-decoration: none;" class="c">
+                        <div class="goto3">Certificate</div>
+                    </a>
+                    <a href="./cenextgent.html" style="text-decoration: none;" class="d">
+                        <div class="goto4">CE NEXT GEN</div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+        <div class="Certificate_img">
+            <div class="certi1">
+                <img src="./img/certifi1.JPG" alt="certificate" width="300" class="ca">
+                <br>
+                <P>การแข่งขันวิชาการและประกวดสิ่งประดิษฐ์<br>นักเรียนโรงเรียนเอกชน ประจำปี 2561</P>
+            </div>
+            <div class="certi2">
+                <img src="./img/certifi2.JPG" alt="certificate" width="300" class="cb">
+                <br>
+                <P>การแข่งขันวิชาการและประกวดสิ่งประดิษฐ์<br>นักเรียนโรงเรียนเอกชน ประจำปี 2562</P>
+            </div>
+            <div class="certi3">
+                <img src="./img/certifi3.JPG" alt="certificate" width="300" class="cc">
+                <br>
+                <P>งานศิลปหัตถกรรมนักเรียน ระดับเขตศึกษา<br>ประจำปี 2562</P>
+            </div>
+        </div>
+        <div class="Cer">
+            <h1>Certificate</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
